@@ -1,5 +1,6 @@
 import DadosAluno from "./Components/DadosAlunos/DadosAlunos"
 import Disciplinas from "./Components/Disciplinas/Discplinas"
+import './App.css'
 export type Aluno = {
   nome: string
   matricula: number
@@ -26,6 +27,13 @@ function App() {
   }
   const disciplinas:Disciplina[] = [
     {
+      code: 'Codigo',
+      nome: 'Disciplina',
+      dia: 'dia',
+      horaInicio: 'hora inicio',
+      horaFim: 'hora fim',
+    },
+    {
       code: 'CC123',
       nome: 'Introdução a Ciência da Computação',
       dia: 'Segunda',
@@ -39,7 +47,7 @@ function App() {
       horaInicio: '14:00',
       horaFim: '16:00',}]
   return (
-    <div>
+    <div className="App">
       <DadosAluno {...aluno} />
       <Disciplinas disciplinas={disciplinas} />
     </div>  )

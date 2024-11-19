@@ -3,7 +3,7 @@
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 20px;
-    width: 30%;
+    width: 100%;
     border: 5px solid #000;
     border-bottom: 0;
 }
@@ -15,6 +15,7 @@
     justify-content: space-between;
     width: 100%;
     height: auto;
+    min-height: 50px;
     padding-bottom: 10px;
     padding-top: 10px;
     border-bottom: 5px solid #000;
@@ -30,6 +31,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 .disciplinaData p{
     margin: 0%;
@@ -43,4 +45,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    text-align: center;
 }
