@@ -1,68 +1,21 @@
-
-type Aluno = {
+import DadosAluno from "./Components/DadosAlunos/DadosAlunos"
+import Disciplinas from "./Components/Disciplinas/Discplinas"
+export type Aluno = {
   nome: string
   matricula: number
   idade: number
   curso: string
   periodoLetivo: number
 }
-type Disciplina = {
+export type Disciplina = {
   code: string,
   nome: string,
   dia: string,
   horaInicio: string,
   horaFim: string,
 }
-function Dado({nome, valor}: {nome: string, valor: string | number}) {
-   return (
-    <div>
-      <h1>{nome}</h1>
-      <p>{valor}</p>
-    </div>
-   )
-}
-function DadosAluno(aluno: Aluno) {
-  return (
-    <div>
-      {Object.entries(aluno).map(([nome, valor]) => {
-        return <Dado nome={nome} valor={valor} />
-      })}
-      <div>
-        <h1>Matricula</h1>
-        <h1>Situação</h1>
-        <h1>Nome</h1>
-        <h1>Curso</h1>
-        <h1>Periodo</h1>
-      </div>
-      <div>
-        <p>{aluno.matricula}</p>
-        <p>{aluno.idade}</p>
-        <p>{aluno.nome}</p>
-        <p>{aluno.curso}</p>
-        <p>{aluno.periodoLetivo}</p>
-      </div>
 
-    </div>
-  )
-}
-function Disciplinas({ disciplinas }: { disciplinas: Disciplina[] }) {
-  
-  return (
-    <div>
-      <div>
-        {disciplinas.map((disciplina) => (
-          <div>
-            <h2>{disciplina.code}</h2>
-            <p>{disciplina.nome}</p>
-            <p>{disciplina.dia}</p>
-            <p>{disciplina.horaInicio}</p>
-            <p>{disciplina.horaFim}</p>
-          </div>
-        ))}
-      </div>
-    </div>
-  )
-}
+
 function App() {
   const aluno = {
     nome: 'Fulano',
