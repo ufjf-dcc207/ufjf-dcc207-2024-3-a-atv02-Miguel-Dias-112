@@ -1,11 +1,12 @@
 import { Disciplina } from '../../App'
+import './Disciplinas.css'
 function Disciplinas({ disciplinas }: { disciplinas: Disciplina[] }) {
   
     return (
-      <div>
-        <div>
+      
+        <div className='disciplinasContainer'>
           {disciplinas.map((disciplina) => (
-            <div>
+            <div className='disciplinaData'>
               <h2>{disciplina.code}</h2>
               <p>{disciplina.nome}</p>
               <p>{disciplina.dia}</p>
@@ -14,7 +15,7 @@ function Disciplinas({ disciplinas }: { disciplinas: Disciplina[] }) {
             </div>
           ))}
         </div>
-      </div>
+    
     )
   }
   export default Disciplinas

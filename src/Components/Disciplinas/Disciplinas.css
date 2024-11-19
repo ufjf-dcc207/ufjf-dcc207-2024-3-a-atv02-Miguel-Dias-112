@@ -1,0 +1,46 @@
+.disciplinasContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    width: 30%;
+    border: 5px solid #000;
+    border-bottom: 0;
+}
+.disciplinaData{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-bottom: 5px solid #000;
+    
+}
+.disciplinaData h2{
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    font-size: medium;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.disciplinaData p{
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    height: 100%;
+    padding-left: 10px;
+    border-left: 4px solid black;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
