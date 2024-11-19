@@ -13,9 +13,20 @@ type Disciplina = {
   horaInicio: string,
   horaFim: string,
 }
+function Dado({nome, valor}: {nome: string, valor: string | number}) {
+   return (
+    <div>
+      <h1>{nome}</h1>
+      <p>{valor}</p>
+    </div>
+   )
+}
 function DadosAluno(aluno: Aluno) {
   return (
     <div>
+      {Object.entries(aluno).map(([nome, valor]) => {
+        return <Dado nome={nome} valor={valor} />
+      })}
       <div>
         <h1>Matricula</h1>
         <h1>Situação</h1>
